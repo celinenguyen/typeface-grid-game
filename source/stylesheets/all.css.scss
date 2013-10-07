@@ -11,23 +11,32 @@ body {
 
 
 #grid {
-  background-color: red;
+  background-color: #333;
   height: $grid_size;
   position: relative;
   width: $grid_size;
   .character, .factoid {
-    height: $square_size - 2;
     position: absolute;
-    width: $square_size - 2;
   }
   .character {
     @include single-transition(all);
     border: 1px solid rgba(0, 0, 0, 0.5);
-    background-color: rgba(0, 0, 255, 1);
+    background-color: #000;
+    color: #fff;
+    height: $square_size - 2;
+    width: $square_size - 2;
     z-index: 10;
   }
   .factoid {
+    padding: 10px;
+    height: $square_size - 20;
+    width: $square_size - 20;
     z-index: 1;
+    p {
+      color: #fff;
+      margin-top: 30%;
+      text-align: center;
+    }
   }
 }
 
