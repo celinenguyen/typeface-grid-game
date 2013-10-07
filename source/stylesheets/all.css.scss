@@ -1,0 +1,81 @@
+@charset "utf-8";
+@import "compass";
+
+$square_size: 150px;
+$grid_size: $square_size * 3;
+
+body {
+  margin: 0 auto;
+  width: $grid_size;
+}
+
+
+#grid {
+  background-color: red;
+  height: $grid_size;
+  position: relative;
+  width: $grid_size;
+  .character, .factoid {
+    height: $square_size - 2;
+    position: absolute;
+    width: $square_size - 2;
+  }
+  .character {
+    @include single-transition(all);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 255, 1);
+    z-index: 10;
+  }
+  .factoid {
+    z-index: 1;
+  }
+}
+
+/* CHARACTER SQUARES */
+
+#one {
+  top: 0;
+  left: 0;
+}
+
+#two {
+  top: 0;
+  left: $square_size;
+}
+
+#three {
+  top: 0;
+  left: $square_size * 2;
+}
+
+#four {
+  top: $square_size;
+  left: 0;
+}
+
+#five {
+  top: $square_size;
+  left: $square_size * 2;
+}
+
+#six {
+  top: $square_size * 2;
+  left: 0;
+}
+
+#seven {
+  top: $square_size * 2;
+  left: $square_size;
+}
+
+#eight {
+  top: $square_size * 2;
+  left: $square_size * 2;
+}
+
+/* FACTOID SQUARES */
+
+#made-in {
+  top: 0;
+  left: 0;
+}
