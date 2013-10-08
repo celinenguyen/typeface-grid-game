@@ -1,17 +1,19 @@
 @charset "utf-8";
 @import "compass";
+@import "grid";
 
-$square_size: 150px;
+$square_size: 250px;
 $grid_size: $square_size * 3;
 
 body {
+  background-color: #eee;
   margin: 0 auto;
   width: $grid_size;
 }
 
 
 #grid {
-  background-color: #333;
+  background-color: #222;
   height: $grid_size;
   position: relative;
   width: $grid_size;
@@ -20,11 +22,15 @@ body {
   }
   .character {
     @include single-transition(all);
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    background-color: #000;
-    color: #fff;
-    height: $square_size - 2;
-    width: $square_size - 2;
+    background-color: #fff;
+    color: #000;
+    font-size: $square_size * 1.8;
+    font-family: 'Helvetica Neue';
+    font-weight: bold;
+    height: $square_size;
+    line-height: 0.5;
+    overflow: hidden;
+    width: $square_size;
     z-index: 10;
   }
   .factoid {
@@ -32,59 +38,54 @@ body {
     height: $square_size - 20;
     width: $square_size - 20;
     z-index: 1;
-    p {
+    h3, p {
       color: #fff;
-      margin-top: 30%;
-      text-align: center;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+    h3 { margin-top: 20%; }
+    p {
+      font-size: 14px;
+      line-height: 1.4;
     }
   }
 }
 
 /* CHARACTER SQUARES */
 
-#one {
-  top: 0;
-  left: 0;
-}
-
-#two {
-  top: 0;
-  left: $square_size;
-}
-
-#three {
-  top: 0;
-  left: $square_size * 2;
-}
-
-#four {
-  top: $square_size;
-  left: 0;
-}
-
-#five {
-  top: $square_size;
-  left: $square_size * 2;
-}
-
-#six {
-  top: $square_size * 2;
-  left: 0;
-}
-
-#seven {
-  top: $square_size * 2;
-  left: $square_size;
-}
-
-#eight {
-  top: $square_size * 2;
-  left: $square_size * 2;
-}
+#one { @include top-left; }
+#two { @include top-center; }
+#three { @include top-right; }
+#four { @include center-left; }
+#five { @include center-right; }
+#six { @include bottom-left; }
+#seven { @include bottom-center; }
+#eight { @include bottom-right; }
 
 /* FACTOID SQUARES */
 
-#made-in {
-  top: 0;
-  left: 0;
+#designed-by { @include center-center; }
+#design-requirements { @include bottom-right; }
+#helvetica-the-movie { @include top-right; }
+#languages { @include bottom-left; }
+#punctuation { @include center-right; }
+#whats-neue { @include bottom-center; }
+#widths-and-weights { @include center-left; }
+#strokes { @include top-center; }
+
+/* INDIVIDUAL CHARACTER CROPS */
+
+#uppercase-n { @include offset(-50px, -5px); }
+#uppercase-r { @include offset(60px, -60px); }
+
+#lowercase-a { @include offset(-5px, 40px); }
+#lowercase-h { @include offset(10px, -5px); }
+#lowercase-y { @include offset(-130px, 30px); }
+
+#number-2 { 
+  @include offset(-25px, 40px); 
+  content: getUnicode('2');
 }
+
+#symbol-ampersand { @include offset(50px, -5px); }
+#symbol-leftbrace { @include offset(20px, 115px); }

@@ -1,0 +1,51 @@
+@mixin offset($top, $left) {
+	margin-top: $top;
+	margin-left: $left;
+}
+
+// POSITIONING MIXINS
+
+@mixin top-left {
+	top: 0;
+  left: 0;
+}
+
+@mixin top-center {
+  top: 0;
+  left: $square_size;
+}
+
+@mixin top-right {
+  top: 0;
+  left: $square_size * 2;
+}
+
+@mixin center-left {
+  top: $square_size;
+  left: 0;
+}
+
+@mixin center-center {
+  top: $square_size;
+  left: $square_size;
+}
+
+@mixin center-right {
+  top: $square_size;
+  left: $square_size * 2;
+}
+
+@mixin bottom-left {
+  top: $square_size * 2;
+  left: 0;
+}
+
+@mixin bottom-center {
+  top: $square_size * 2;
+  left: $square_size;
+}
+
+@mixin bottom-right {
+  top: $square_size * 2;
+  left: $square_size * 2;
+}

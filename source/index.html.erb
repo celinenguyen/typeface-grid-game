@@ -5,24 +5,44 @@ title: Hello there!
 <h1>Typeface Grid Game</h1>
 
 <div id="grid">
-	<div class="factoid" id="made-in">
-		<p>Some country</p>
-	</div>
+	<!-- stationary factoid squares -->
+	<% data.factoids.each do |item| %>
+		<div class="factoid" id="<%= item.id %>">
+			<h3><%= item.name %></h3>
+			<p><%= item.fact %></p>
+		</div>
+ 	<% end %>
 	<!-- movable character squares -->
-	<div class="character" id="one">A</div>
-  <div class="character" id="two">B</div>
-  <div class="character" id="three">C</div>
-  <div class="character" id="four">D</div>
-  <div class="character" id="five">E</div>
-  <div class="character" id="six">F</div>
-  <div class="character" id="seven">G</div>
-  <div class="character" id="eight">H</div>
+	<div class="character" id="one">
+		<div id="lowercase-a">a</div>
+	</div>
+  <div class="character" id="two">
+  	<div id="number-2">2</div>
+  </div>
+  <div class="character" id="three">
+  	<div id="symbol-ampersand">&amp;</div>
+  </div>
+  <div class="character" id="four">
+  	<div id="lowercase-h">h</div>
+  </div>
+  <div class="character" id="five">
+  	<div id="uppercase-n">N</div>
+  </div>
+  <div class="character" id="six">
+  	<div id="symbol-leftbrace">{</div>
+  </div>
+  <div class="character" id="seven">
+  	<div id="uppercase-r">R</div>
+  </div>
+  <div class="character" id="eight">
+  	<div id="lowercase-y">y</div>
+  </div>
 </div><!-- #grid -->
 
 <script type="text/javascript">
 	$(document).ready(function() {
 
-		var square_size = 150;
+		var square_size = 250;
 		var grid_size = square_size * 3;
 		var empty_top = square_size;
 		var empty_left = square_size;
@@ -51,9 +71,6 @@ title: Hello there!
       var temp_left = $(this).css("left");
       console.log("stored left = " + empty_left + ", left = " + temp_left);
       console.log("empty_left and temp_left: " + (empty_left === temp_left));
-      // do adjacency check
-      // @todo: separate adjacency into different function
-      // @todo: do actual adjacency check to fix inter-row/inter-col issues
       if (check_adjacency(empty_top, empty_left, temp_top, temp_left)) {
       	// move item
 	      $(this).css("top", empty_top);

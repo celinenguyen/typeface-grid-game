@@ -1,0 +1,27 @@
+- name: 'Widths & Weights'
+  id: widths-and-weights
+  fact: 'Helvetica Neue has 9 weights, three widths (normal, condensed, and extended) and an outline font, for 51 fonts total.'
+- name: Designed By
+  id: designed-by
+  fact: 'Helvetica was designed in 1957 by Max Miedinger for Haas Type Foundry (later acquired by Linotype).'
+- name: Design Requirements
+  id: design-requirements
+  fact: "Helvetica was intended to be a neutral, international typeface in the Modernist style, and very usable for signage."
+- name: "What's Neue in Helvetica Neue?"
+  id: whats-neue
+  fact: 'Helvetica Neue (by Wolfgang Schimpf in 1983) was intended to improve legibility and unify the character heights and widths.'
+- name: 'Punctuation'
+  id: punctuation
+  fact: 'Helvetica Neue features heavier punctuation marks than Helvetica.'
+- name: Strokes
+  id: 'strokes'
+  fact: "Nearly all of Helvetica's strokes are cut horizontally or vertically, which helps to distinguish the face from dupes like Arial."
+- name: Languages
+  id: languages
+  fact: 'Helvetica Neue comes in multiple languages, including Cyrillic, Central European, Thai, Greek (by Matthew Carter), Arabic (by Nadine Chahine), Korean, Hindi, Hebrew, and Japanese.'
+- name: Helvetica the Movie
+  id: helvetica-the-movie
+  fact: "The typeface's influence on design culture was celebrated with a documentary titled <em>Helvetica</em> by Gary Hustwit."
+- name: Usage
+  id: Usage
+  fact: "Helvetica is used in several areas of Apple's iOS interface, NYC's MTA and Chicago's Transit Authority signage, on the NASA Space Shuttle orbiter, and multiple corporate identities."
