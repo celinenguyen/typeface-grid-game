@@ -1,0 +1,63 @@
+#uppercase-a:after { @include place('A'); }
+#uppercase-b:after { @include place('B'); }
+#uppercase-c:after { @include place('C'); }
+#uppercase-d:after { @include place('D'); }
+#uppercase-e:after { @include place('E'); }
+#uppercase-f:after { @include place('F'); }
+#uppercase-g:after { @include place('G'); }
+#uppercase-h:after { @include place('H'); }
+#uppercase-i:after { @include place('I'); }
+#uppercase-j:after { @include place('J'); }
+#uppercase-k:after { @include place('K'); }
+#uppercase-l:after { @include place('L'); }
+#uppercase-m:after { @include place('M'); }
+#uppercase-n:after { @include place('N', -50px, -5px); }
+#uppercase-o:after { @include place('O'); }
+#uppercase-p:after { @include place('P'); }
+#uppercase-q:after { @include place('Q'); }
+#uppercase-r:after { @include place('R', 60px, -60px); }
+#uppercase-s:after { @include place('S'); }
+#uppercase-t:after { @include place('T'); }
+#uppercase-u:after { @include place('U'); }
+#uppercase-v:after { @include place('V'); }
+#uppercase-w:after { @include place('W'); }
+#uppercase-x:after { @include place('X'); }
+#uppercase-y:after { @include place('Y'); }
+#uppercase-z:after { @include place('Z'); }
+
+#lowercase-a:after { @include place('a', -10px, 40px); }
+#lowercase-b:after { @include place('b'); }
+#lowercase-c:after { @include place('c'); }
+#lowercase-d:after { @include place('d'); }
+#lowercase-e:after { @include place('e'); }
+#lowercase-f:after { @include place('f'); }
+#lowercase-g:after { @include place('g'); }
+#lowercase-h:after { @include place('h', 10px, -5px); }
+#lowercase-i:after { @include place('i'); }
+#lowercase-j:after { @include place('j'); }
+#lowercase-k:after { @include place('k'); }
+#lowercase-l:after { @include place('l'); }
+#lowercase-m:after { @include place('m'); }
+#lowercase-n:after { @include place('n'); }
+#lowercase-o:after { @include place('o'); }
+#lowercase-p:after { @include place('p'); }
+#lowercase-q:after { @include place('q'); }
+#lowercase-r:after { @include place('r'); }
+#lowercase-s:after { @include place('s'); }
+#lowercase-t:after { @include place('t'); }
+#lowercase-u:after { @include place('u'); }
+#lowercase-v:after { @include place('v'); }
+#lowercase-w:after { @include place('w'); }
+#lowercase-x:after { @include place('x'); }
+#lowercase-y:after { @include place('y', -130px, 30px); }
+#lowercase-z:after { @include place('z'); }
+
+
+
+
+
+
+#number-2:after { @include place('2', -25px, 40px); }
+
+#symbol-ampersand:after { @include place('&', 50px, -5px); }
+#symbol-leftbrace:after { @include place('{', 20px, 115px); }

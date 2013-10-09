@@ -75,17 +75,4 @@ body {
 
 /* INDIVIDUAL CHARACTER CROPS */
 
-#uppercase-n { @include offset(-50px, -5px); }
-#uppercase-r { @include offset(60px, -60px); }
-
-#lowercase-a { @include offset(-5px, 40px); }
-#lowercase-h { @include offset(10px, -5px); }
-#lowercase-y { @include offset(-130px, 30px); }
-
-#number-2 { 
-  @include offset(-25px, 40px); 
-  content: getUnicode('2');
-}
-
-#symbol-ampersand { @include offset(50px, -5px); }
-#symbol-leftbrace { @include offset(20px, 115px); }
+@import "characters";

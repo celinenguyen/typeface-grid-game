@@ -1,4 +1,6 @@
-@mixin offset($top, $left) {
+@mixin place($character: '#', $top: '10px', $left: '10px') {
+  content: $character;
+  display: block;
 	margin-top: $top;
 	margin-left: $left;
 }
