@@ -105,10 +105,6 @@ $(document).ready(function() {
 	function change_on_to_exclusive_on() {
 		$(".on").toggleClass("exclusive-on");
 		$(".on").toggleClass("on");
-		// clear character-level styles
-		$('.character').attr('class', 'character');
-		// do id checks to set entire grid
-		var exclusive_id = $(".exclusive-on")[0].id;
 	}
 
 	function select_some_to_restyle(style) {
@@ -140,6 +136,7 @@ $(document).ready(function() {
 		for (var i = 0; i < to_unstyle.length; i++) {
 			var index = Math.floor(Math.random() * active_styles.length);
 			var new_style = active_styles[index];
+			console.log(new_style);
 			var item = to_unstyle[i];
 			$(item).addClass(new_style);
 			$(item).removeClass(style);
@@ -219,7 +216,6 @@ $(document).ready(function() {
   		}
   	}
   });
-
 
 
 });
