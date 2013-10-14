@@ -89,6 +89,7 @@ $(document).ready(function() {
   	$(this).toggleClass("inverted");
   });
 
+  // clear UI on toggles
   function clear_weight_toggles() {
   	$('#normal').removeClass("on");
 		$('#italic').removeClass("on");
@@ -96,6 +97,7 @@ $(document).ready(function() {
 		$('#bolditalic').removeClass("on");
 	}
 
+	// clear UI exclusive-on toggles
 	function clear_weight_exclusive_toggles() {
 		var exclusives = $(".exclusive-on");
 		exclusives.removeClass("exclusive-on");
@@ -105,6 +107,13 @@ $(document).ready(function() {
 	function change_on_to_exclusive_on() {
 		$(".on").toggleClass("exclusive-on");
 		$(".on").toggleClass("on");
+		var all_characters = $('.character');
+		var style = $(".exclusive-on")[0].id;
+		for (var i = 0; i < all_characters.length; i++) {
+			var item = all_characters[i];
+			$(item).attr('class', 'character'); // clears old style classes
+			$(item).addClass(style);
+		}
 	}
 
 	function select_some_to_restyle(style) {
@@ -136,7 +145,6 @@ $(document).ready(function() {
 		for (var i = 0; i < to_unstyle.length; i++) {
 			var index = Math.floor(Math.random() * active_styles.length);
 			var new_style = active_styles[index];
-			console.log(new_style);
 			var item = to_unstyle[i];
 			$(item).addClass(new_style);
 			$(item).removeClass(style);
@@ -217,5 +225,30 @@ $(document).ready(function() {
   	}
   });
 
+  // change weight double click
+  $("#normal").dblclick(function(event) {
+  	clear_weight_exclusive_toggles();
+  	clear_weight_toggles();
+  	$(this).toggleClass("on");
+  	change_on_to_exclusive_on();
+  });
+  $("#italic").dblclick(function(event) {
+  	clear_weight_exclusive_toggles();
+  	clear_weight_toggles();
+  	$(this).toggleClass("on");
+  	change_on_to_exclusive_on();
+  });
+  $("#bold").dblclick(function(event) {
+  	clear_weight_exclusive_toggles();
+  	clear_weight_toggles();
+  	$(this).toggleClass("on");
+  	change_on_to_exclusive_on();
+  });
+  $("#bolditalic").dblclick(function(event) {
+  	clear_weight_exclusive_toggles();
+  	clear_weight_toggles();
+  	$(this).toggleClass("on");
+  	change_on_to_exclusive_on();
+  });
 
 });
