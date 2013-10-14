@@ -4,7 +4,7 @@
 
 $square_size: 250px;
 $grid_size: $square_size * 3;
-$hover_color: #F08A16;
+$orange: #F08A16;
 
 body {
   background-color: #ddd;
@@ -25,19 +25,23 @@ header {
     list-style-type: none;
     padding: 10px;
     li {
+      @include border-radius(3px);
       @include single-transition(all);
+      background-color: #dfdfdf;
+      border: 1px solid #999;
       color: rgba(0, 0, 0, 0.5);
       display: inline-block;
-      font-weight: bold;
+      height: 25px;
       letter-spacing: 1px;
-      padding: 3px 5px;
-      text-transform: uppercase;
+      line-height: 1.5;
+      margin-right: 5px;
+      padding: 3px 8px;
       &:hover, &:active {
         background-color: #efefef;
         color: rgba(0, 0, 0, 0.7);
       }
       &:active {
-        color: $hover_color;
+        color: $orange;
       }
     }
   }
@@ -65,8 +69,9 @@ header {
     width: $square_size;
     z-index: 10;
   }
-  .character:hover {
-    background-color: $hover_color;
+  .inverted {
+    background-color: #000;
+    color: #fff;
   }
   .factoid {
     padding: 10px;
@@ -122,3 +127,44 @@ header {
 /* INDIVIDUAL CHARACTER CROPS */
 
 @import "characters";
+
+/* MISCELLANEOUS */
+
+.unselectable {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none; /* IE 10+ */
+}
+.divider {
+  background-color: #bbb;
+  display: inline-block;
+  height: 200%;
+  margin: 0 10px;
+  width: 1px;
+}
+#normal, .normal {
+  font-style: normal;
+  font-weight: normal;
+}
+#italic, .italic {
+  font-style: italic;
+  font-weight: normal;
+}
+#bold, .bold {
+  font-style: normal;
+  font-weight: bold;
+}
+#bolditalic, .bolditalic {
+  font-style: italic;
+  font-weight: bold;
+}
+
+#options .on {
+  background-color: #f8f8f8;
+  color: rgba(0, 0, 0, 0.7);
+}
+#options .exclusive-on {
+  background-color: #f8f8f8;
+  color: $orange;
+}

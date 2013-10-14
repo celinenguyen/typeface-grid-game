@@ -84,22 +84,142 @@ $(document).ready(function() {
     }
   });
 
-  // change weight
+  // recolor character tiles on doubleclick
+  $(".character").dblclick(function(event) {
+  	$(this).toggleClass("inverted");
+  });
+
+  function clear_weight_toggles() {
+  	$('#normal').removeClass("on");
+		$('#italic').removeClass("on");
+		$('#bold').removeClass("on");
+		$('#bolditalic').removeClass("on");
+	}
+
+	function clear_weight_exclusive_toggles() {
+		var exclusives = $(".exclusive-on");
+		exclusives.removeClass("exclusive-on");
+		exclusives.addClass("on");
+	}
+
+	function change_on_to_exclusive_on() {
+		$(".on").toggleClass("exclusive-on");
+		$(".on").toggleClass("on");
+		// clear character-level styles
+		$('.character').attr('class', 'character');
+		// do id checks to set entire grid
+		var exclusive_id = $(".exclusive-on")[0].id;
+	}
+
+	function select_some_to_restyle(style) {
+		var all_characters = $('.character');
+		for (var i = 0; i < 3; i++) {
+			var index = Math.floor(Math.random() * all_characters.length);
+			var item = all_characters[index];
+			$(item).attr('class', 'character'); // clears old style classes
+			$(item).addClass(style);
+		}
+	}
+
+	function get_active_styles() {
+		var active_styles = [];
+		var styles_on = $('#options .on');
+		for (var i = 0; i < styles_on.length; i++) {
+			var id = $(styles_on)[i].id;
+			active_styles.push($(styles_on)[i].id);
+		}
+		return active_styles;
+	}
+
+	function unstyle_all_of_style(style) {
+		var active_styles = get_active_styles();
+		console.log(active_styles);
+		var selector = "." + style;
+		var to_unstyle = $(selector);
+		console.log(to_unstyle);
+		for (var i = 0; i < to_unstyle.length; i++) {
+			var index = Math.floor(Math.random() * active_styles.length);
+			var new_style = active_styles[index];
+			var item = to_unstyle[i];
+			$(item).addClass(new_style);
+			$(item).removeClass(style);
+		}
+	}
+
+	// change weight single click
   $("#normal").click(function(event) {
-  	$('#grid').css("font-style", "normal")
-  	$('#grid').css("font-weight", "normal")
+  	$(this).toggleClass("on");
+  	if ($(this).hasClass("on")) {
+  		clear_weight_exclusive_toggles();
+  		if ($(".on").length === 1) {
+  			change_on_to_exclusive_on();
+  		}
+  		else {
+  			select_some_to_restyle("normal");
+  		}
+  	}
+  	else {
+  		unstyle_all_of_style("normal");
+  		if ($(".on").length === 1) {
+  			change_on_to_exclusive_on();
+  		}
+  	}
   });
   $("#italic").click(function(event) {
-  	$('#grid').css("font-style", "italic")
-  	$('#grid').css("font-weight", "normal")
+  	$(this).toggleClass("on");
+  	if ($(this).hasClass("on")) {
+  		clear_weight_exclusive_toggles();
+  		if ($(".on").length === 1) {
+  			change_on_to_exclusive_on();
+  		}
+  		else {
+  			select_some_to_restyle("italic");
+  		}
+  	}
+  	else {
+  		unstyle_all_of_style("italic");
+  		if ($(".on").length === 1) {
+  			change_on_to_exclusive_on();
+  		}
+  	}
   });
   $("#bold").click(function(event) {
-  	$('#grid').css("font-style", "normal")
-  	$('#grid').css("font-weight", "bold")
+  	$(this).toggleClass("on");
+  	if ($(this).hasClass("on")) {
+  		clear_weight_exclusive_toggles();
+  		if ($(".on").length === 1) {
+  			change_on_to_exclusive_on();
+  		}
+  		else {
+  			select_some_to_restyle("bold");
+  		}
+  	}
+  	else {
+  		unstyle_all_of_style("bold");
+  		if ($(".on").length === 1) {
+  			change_on_to_exclusive_on();
+  		}
+  	}
   });
   $("#bolditalic").click(function(event) {
-  	$('#grid').css("font-style", "italic")
-  	$('#grid').css("font-weight", "bold")
+  	$(this).toggleClass("on");
+  	if ($(this).hasClass("on")) {
+  		clear_weight_exclusive_toggles();
+  		if ($(".on").length === 1) {
+  			change_on_to_exclusive_on();
+  		}
+  		else {
+  			select_some_to_restyle("bolditalic");
+  		}
+  	}
+  	else {
+  		unstyle_all_of_style("bolditalic");
+  		if ($(".on").length === 1) {
+  			change_on_to_exclusive_on();
+  		}
+  	}
   });
+
+
 
 });
