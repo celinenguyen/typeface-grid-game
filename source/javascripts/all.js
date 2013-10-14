@@ -8,7 +8,7 @@ $(document).ready(function() {
 	var empty_left = square_size;
 
 	// load in character classes
-	$.getJSON( "/characters.json", function(data) {
+	$.getJSON( "characters.json", function(data) {
 
 		var character_ids = [];
 	  $.each( data, function(key, value) {
