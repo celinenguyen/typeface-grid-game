@@ -111,9 +111,16 @@ $(document).ready(function() {
 		var style = $(".exclusive-on")[0].id;
 		for (var i = 0; i < all_characters.length; i++) {
 			var item = all_characters[i];
-			$(item).attr('class', 'character'); // clears old style classes
+			clear_weight_classes(item);
 			$(item).addClass(style);
 		}
+	}
+
+	function clear_weight_classes(item) {
+		$(item).removeClass("normal");
+		$(item).removeClass("italic");
+		$(item).removeClass("bold");
+		$(item).removeClass("bolditalic");
 	}
 
 	function select_some_to_restyle(style) {
@@ -121,7 +128,7 @@ $(document).ready(function() {
 		for (var i = 0; i < 3; i++) {
 			var index = Math.floor(Math.random() * all_characters.length);
 			var item = all_characters[index];
-			$(item).attr('class', 'character'); // clears old style classes
+			clear_weight_classes(item);
 			$(item).addClass(style);
 		}
 	}
