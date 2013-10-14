@@ -63,7 +63,7 @@ header {
     -o-transition: all 1s;
     transition: all 1s;
     background-color: #fff;
-    color: #000;
+    color: #222;
     font-size: 450px;
     font-family: 'Helvetica Neue';
     height: 250px;
@@ -73,7 +73,7 @@ header {
     z-index: 10; }
   /* line 72, /Users/Celine/Dropbox/Web/type/source/stylesheets/all.css.scss */
   #grid .inverted {
-    background-color: #000;
+    background-color: #222;
     color: #fff; }
   /* line 76, /Users/Celine/Dropbox/Web/type/source/stylesheets/all.css.scss */
   #grid .factoid {
