@@ -1,4 +1,4 @@
-@mixin place($character: '#', $top: '10px', $left: '10px') {
+@mixin place($character: '#', $top: 10px, $left: 10px) {
   content: $character;
   display: block;
 	margin-top: $top;

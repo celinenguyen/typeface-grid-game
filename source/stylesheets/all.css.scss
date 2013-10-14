@@ -4,16 +4,49 @@
 
 $square_size: 250px;
 $grid_size: $square_size * 3;
+$hover_color: #F08A16;
 
 body {
-  background-color: #eee;
+  background-color: #ddd;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   margin: 0 auto;
-  width: $grid_size;
+  width: $grid_size + 10;
 }
 
+header {
+  margin-bottom: 20px;
+  h1 {
+    color: rgba(0, 0, 0, 0.4);
+    text-align: right;
+  }
+  ul {
+    border-top: 2px solid #bbb;
+    border-bottom: 4px solid #bbb;
+    list-style-type: none;
+    padding: 10px;
+    li {
+      @include single-transition(all);
+      color: rgba(0, 0, 0, 0.5);
+      display: inline-block;
+      font-weight: bold;
+      letter-spacing: 1px;
+      padding: 3px 5px;
+      text-transform: uppercase;
+      &:hover, &:active {
+        background-color: #efefef;
+        color: rgba(0, 0, 0, 0.7);
+      }
+      &:active {
+        color: $hover_color;
+      }
+    }
+  }
+}
 
 #grid {
   background-color: #222;
+  border: 5px solid #ccc;
+  font-weight: bold;
   height: $grid_size;
   position: relative;
   width: $grid_size;
@@ -26,27 +59,40 @@ body {
     color: #000;
     font-size: $square_size * 1.8;
     font-family: 'Helvetica Neue';
-    font-weight: bold;
     height: $square_size;
     line-height: 0.5;
     overflow: hidden;
     width: $square_size;
     z-index: 10;
   }
+  .character:hover {
+    background-color: $hover_color;
+  }
   .factoid {
     padding: 10px;
     height: $square_size - 20;
     width: $square_size - 20;
     z-index: 1;
-    h3, p {
-      color: #fff;
-      margin-left: 10%;
-      margin-right: 10%;
+    h3, ul {
+      margin-left: 8%;
+      margin-right: 8%;
     }
-    h3 { margin-top: 20%; }
-    p {
+    h3 {
+      color: rgba(255, 255, 255, 0.3);
       font-size: 14px;
-      line-height: 1.4;
+      letter-spacing: 1px;
+      margin-top: 10%;
+      text-transform: uppercase; 
+    }
+    ul {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 16px;
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      list-style-type: none;
+      margin-top: 10px;
     }
   }
 }

@@ -7,6 +7,7 @@ $(document).ready(function() {
 	var empty_top = square_size;
 	var empty_left = square_size;
 
+	// load in character classes
 	$.getJSON( "/characters.json", function(data) {
 
 		var character_ids = [];
@@ -14,18 +15,44 @@ $(document).ready(function() {
 	    character_ids.push(value);
 	  });
 
+	  // remove existing classes
+	  var initial_grid = $(".character > div");
+	  for (var i = 0; i < initial_grid.length; i++) {
+	  	var remove_id = initial_grid[i].id;
+	  	var remove_index = character_ids.indexOf(remove_id);
+	  	if (remove_index >= 0) {
+	  		var removed = character_ids.splice(remove_index, 1);
+	  	}
+	  }
+
+	  // helper function: take out random ID from character_ids
 		function random_id() {
-			var index = Math.floor(Math.random() * data.length);
+			var index = Math.floor(Math.random() * character_ids.length);
 			var id = character_ids.splice(index, 1);
+			if (!id || 0 === id.length) {
+				console.log("id is " + id);
+				console.log(character_ids);
+			}
 			return id;
 		}
 
 		$("#refresh").click(function(event) {
-			// @todo
+			var current_grid = $(".character > div");
+		  for (var i = 0; i < initial_grid.length; i++) {
+		  	// put back old id
+		  	character_ids.push(current_grid[i].id);
+		  	// get new id
+		  	var new_id = random_id();
+		  	// replace id
+		  	$(current_grid[i]).css("opacity", 0);
+		  	$(current_grid[i]).attr("id", new_id);
+			  $(current_grid[i]).fadeTo("slow", 1);
+		  }
 		});
 
 	});
 
+	// helper function: check square adjacency
 	function check_adjacency(et, el, tt, tl) {
 		et = parseInt(et);
 		el = parseInt(el);
@@ -42,6 +69,7 @@ $(document).ready(function() {
 		else return false;
 	}
 
+	// move character tiles on click
   $(".character").click(function(event) {
   	// store location
     var temp_top = $(this).css("top");
@@ -54,9 +82,24 @@ $(document).ready(function() {
       empty_top = temp_top;
       empty_left = temp_left;
     }
-    else {
-    	console.log("nope");
-    }
+  });
+
+  // change weight
+  $("#normal").click(function(event) {
+  	$('#grid').css("font-style", "normal")
+  	$('#grid').css("font-weight", "normal")
+  });
+  $("#italic").click(function(event) {
+  	$('#grid').css("font-style", "italic")
+  	$('#grid').css("font-weight", "normal")
+  });
+  $("#bold").click(function(event) {
+  	$('#grid').css("font-style", "normal")
+  	$('#grid').css("font-weight", "bold")
+  });
+  $("#bolditalic").click(function(event) {
+  	$('#grid').css("font-style", "italic")
+  	$('#grid').css("font-weight", "bold")
   });
 
 });

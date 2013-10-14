@@ -1,10 +1,17 @@
 ---
-title: Typeface Grid Game
+title: Helvetica Neue
 ---
 
-<h1>Typeface Grid Game</h1>
-
-<button id="refresh" type="button">Refresh!</button>
+<header>
+  <h1>Helvetica Neue</h1>
+  <ul>
+    <li id="refresh">Refresh</li>
+    <li id="normal">Normal</li>
+    <li id="italic">Italic</li>
+    <li id="bold">Bold</li>
+    <li id="bolditalic">Bold Italic</li>
+  </ul>
+</header>
 
 
 <div id="grid">
@@ -12,7 +19,11 @@ title: Typeface Grid Game
 	<% data.factoids.each do |item| %>
 		<div class="factoid" id="<%= item.id %>">
 			<h3><%= item.name %></h3>
-			<p><%= item.fact %></p>
+      <ul>
+        <% item.fact.each do |f| %>
+        <li><%= f %></li>
+        <% end %>
+      </ul>
 		</div>
  	<% end %>
 	<!-- movable character squares -->
