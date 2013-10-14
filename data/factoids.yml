@@ -1,0 +1,55 @@
+- name: 'Widths & Weights'
+  id: widths-and-weights
+  fact:
+    - '9 weights'
+    - 'three widths (normal, condensed, extended)'
+    - '51 fonts total'
+- name: Designed By
+  id: designed-by
+  fact:
+    - Max Miedinger
+    - 1957
+    - 'Haas Type Foundry (acquired by Linotype)'
+- name: Design Requirements
+  id: design-requirements
+  fact: 
+    - 'neutral, international'
+    - 'Modernist style'
+    - 'usable for signage'
+- name: "What's Neue in Helvetica Neue?"
+  id: whats-neue
+  fact:
+    - Wolfgang Schimpf
+    - 1983
+    - improved legibility
+    - unified character heights and widths
+- name: 'Punctuation'
+  id: punctuation
+  fact: 
+    - 'heavier punctuation marks than Helvetica'
+- name: Strokes
+  id: 'strokes'
+  fact:
+    - cut horizontally or vertically
+    - distinguishes Helvetica from dupes like Arial
+- name: Languages
+  id: languages
+  fact:
+    - Greek (by Matthew Carter)
+    - Arabic (by Nadine Chahine)
+    - Korean
+    - Hindi
+    - and more
+- name: Helvetica the Movie
+  id: helvetica-the-movie
+  fact: 
+    - documentary by Gary Hustwit
+    - released for Helvetica's 50th birthday (2007)
+    - celebrated its influence on design culture
+- name: Usage
+  id: Usage
+  fact:
+    - "Apple's iOS interface"
+    - "NYC's MTA & Chicago's Transit Authority signage"
+    - NASA Space Shuttle orbiter
+    - multiple corporate identities

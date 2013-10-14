@@ -1,0 +1,524 @@
+/* line 4, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#uppercase-a:after {
+  content: "A";
+  display: block;
+  margin-top: -10px;
+  margin-left: 20px; }
+
+/* line 5, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#uppercase-b:after {
+  content: "B";
+  display: block;
+  margin-top: -50px;
+  margin-left: -15px; }
+
+/* line 6, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#uppercase-c:after {
+  content: "C";
+  display: block;
+  margin-top: 100px;
+  margin-left: -50px; }
+
+/* line 7, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#uppercase-d:after {
+  content: "D";
+  display: block;
+  margin-top: 70px;
+  margin-left: -45px; }
+
+/* line 8, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#uppercase-e:after {
+  content: "E";
+  display: block;
+  margin-top: 3px;
+  margin-left: 30px; }
+
+/* line 9, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#uppercase-f:after {
+  content: "F";
+  display: block;
+  margin-top: 65px;
+  margin-left: -40px; }
+
+/* line 10, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#uppercase-g:after {
+  content: "G";
+  display: block;
+  margin-top: -30px;
+  margin-left: -75px; }
+
+/* line 11, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#uppercase-h:after {
+  content: "H";
+  display: block;
+  margin-top: 65px;
+  margin-left: -43px; }
+
+/* line 12, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#uppercase-j:after {
+  content: "J";
+  display: block;
+  margin-top: -70px;
+  margin-left: 13px; }
+
+/* line 13, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#uppercase-k:after {
+  content: "K";
+  display: block;
+  margin-top: -10px;
+  margin-left: 37px; }
+
+/* line 14, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#uppercase-l:after {
+  content: "L";
+  display: block;
+  margin-top: -60px;
+  margin-left: 40px; }
+
+/* line 15, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#uppercase-m:after {
+  content: "M";
+  display: block;
+  margin-top: 30px;
+  margin-left: -8px; }
+
+/* line 16, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#uppercase-n:after {
+  content: "N";
+  display: block;
+  margin-top: -50px;
+  margin-left: -5px; }
+
+/* line 17, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#uppercase-o:after {
+  content: "O";
+  display: block;
+  margin-top: 5px;
+  margin-left: 20px; }
+
+/* line 18, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#uppercase-p:after {
+  content: "P";
+  display: block;
+  margin-top: 20px;
+  margin-left: 5px; }
+
+/* line 19, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#uppercase-q:after {
+  content: "Q";
+  display: block;
+  margin-top: -90px;
+  margin-left: 100px; }
+
+/* line 20, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#uppercase-r:after {
+  content: "R";
+  display: block;
+  margin-top: 60px;
+  margin-left: -60px; }
+
+/* line 21, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#uppercase-s:after {
+  content: "S";
+  display: block;
+  margin-top: 5px;
+  margin-left: 55px; }
+
+/* line 22, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#uppercase-t:after {
+  content: "T";
+  display: block;
+  margin-top: 100px;
+  margin-left: -8px; }
+
+/* line 23, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#uppercase-u:after {
+  content: "U";
+  display: block;
+  margin-top: -20px;
+  margin-left: -20px; }
+
+/* line 24, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#uppercase-v:after {
+  content: "V";
+  display: block;
+  margin-top: 60px;
+  margin-left: 39px; }
+
+/* line 25, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#uppercase-w:after {
+  content: "W";
+  display: block;
+  margin-top: 100px;
+  margin-left: 15px; }
+
+/* line 26, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#uppercase-x:after {
+  content: "X";
+  display: block;
+  margin-top: 10px;
+  margin-left: 20px; }
+
+/* line 27, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#uppercase-y:after {
+  content: "Y";
+  display: block;
+  margin-top: 20px;
+  margin-left: 33px; }
+
+/* line 28, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#uppercase-z:after {
+  content: "Z";
+  display: block;
+  margin-top: 5px;
+  margin-left: 40px; }
+
+/* line 30, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#lowercase-a:after {
+  content: "aa";
+  display: block;
+  margin-top: -10px;
+  margin-left: 40px; }
+
+/* line 31, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#lowercase-b:after {
+  content: "b";
+  display: block;
+  margin-top: 35px;
+  margin-left: 10px; }
+
+/* line 32, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#lowercase-c:after {
+  content: "c";
+  display: block;
+  margin-top: 0px;
+  margin-left: 30px; }
+
+/* line 33, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#lowercase-d:after {
+  content: "d";
+  display: block;
+  margin-top: 35px;
+  margin-left: -30px; }
+
+/* line 34, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#lowercase-e:after {
+  content: "e";
+  display: block;
+  margin-top: 15px;
+  margin-left: -5px; }
+
+/* line 35, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#lowercase-f:after {
+  content: "f";
+  display: block;
+  margin-top: 80px;
+  margin-left: 110px; }
+
+/* line 36, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#lowercase-g:after {
+  content: "g";
+  display: block;
+  margin-top: -160px;
+  margin-left: 30px; }
+
+/* line 37, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#lowercase-h:after {
+  content: "h";
+  display: block;
+  margin-top: 10px;
+  margin-left: -5px; }
+
+/* line 38, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#lowercase-i:after {
+  content: "i";
+  display: block;
+  margin-top: 80px;
+  margin-left: 90px; }
+
+/* line 39, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#lowercase-j:after {
+  content: "j";
+  display: block;
+  margin-top: -140px;
+  margin-left: 90px; }
+
+/* line 40, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#lowercase-k:after {
+  content: "k";
+  display: block;
+  margin-top: 30px;
+  margin-left: -10px; }
+
+/* line 41, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#lowercase-m:after {
+  content: "m";
+  display: block;
+  margin-top: 40px;
+  margin-left: -50px; }
+
+/* line 42, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#lowercase-n:after {
+  content: "n";
+  display: block;
+  margin-top: 40px;
+  margin-left: 10px; }
+
+/* line 43, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#lowercase-o:after {
+  content: "o";
+  display: block;
+  margin-top: -10px;
+  margin-left: 30px; }
+
+/* line 44, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#lowercase-p:after {
+  content: "p";
+  display: block;
+  margin-top: -150px;
+  margin-left: 40px; }
+
+/* line 45, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#lowercase-q:after {
+  content: "q";
+  display: block;
+  margin-top: -55px;
+  margin-left: 10px; }
+
+/* line 46, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#lowercase-r:after {
+  content: "r";
+  display: block;
+  margin-top: 20px;
+  margin-left: 90px; }
+
+/* line 47, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#lowercase-s:after {
+  content: "s";
+  display: block;
+  margin-top: -10px;
+  margin-left: 40px; }
+
+/* line 48, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#lowercase-t:after {
+  content: "t";
+  display: block;
+  margin-top: -40px;
+  margin-left: -10px; }
+
+/* line 49, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#lowercase-u:after {
+  content: "u";
+  display: block;
+  margin-top: -70px;
+  margin-left: 20px; }
+
+/* line 50, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#lowercase-v:after {
+  content: "v";
+  display: block;
+  margin-top: -90px;
+  margin-left: 10px; }
+
+/* line 51, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#lowercase-w:after {
+  content: "w";
+  display: block;
+  margin-top: 10px;
+  margin-left: 10px; }
+
+/* line 52, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#lowercase-x:after {
+  content: "x";
+  display: block;
+  margin-top: 0px;
+  margin-left: 18px; }
+
+/* line 53, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#lowercase-y:after {
+  content: "y";
+  display: block;
+  margin-top: -130px;
+  margin-left: 30px; }
+
+/* line 54, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#lowercase-z:after {
+  content: "z";
+  display: block;
+  margin-top: -20px;
+  margin-left: -30px; }
+
+/* line 57, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#number-0:after {
+  content: "0";
+  display: block;
+  margin-top: 50px;
+  margin-left: 25px; }
+
+/* line 58, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#number-1:after {
+  content: "1";
+  display: block;
+  margin-top: 60px;
+  margin-left: 80px; }
+
+/* line 59, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#number-2:after {
+  content: "2";
+  display: block;
+  margin-top: -25px;
+  margin-left: 40px; }
+
+/* line 60, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#number-3:after {
+  content: "3";
+  display: block;
+  margin-top: 0px;
+  margin-left: 38px; }
+
+/* line 61, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#number-4:after {
+  content: "4";
+  display: block;
+  margin-top: 10px;
+  margin-left: -60px; }
+
+/* line 62, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#number-5:after {
+  content: "5";
+  display: block;
+  margin-top: 0px;
+  margin-left: 40px; }
+
+/* line 63, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#number-6:after {
+  content: "6";
+  display: block;
+  margin-top: 60px;
+  margin-left: 40px; }
+
+/* line 64, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#number-7:after {
+  content: "7";
+  display: block;
+  margin-top: 20px;
+  margin-left: -30px; }
+
+/* line 65, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#number-8:after {
+  content: "8";
+  display: block;
+  margin-top: 25px;
+  margin-left: 30px; }
+
+/* line 66, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#number-9:after {
+  content: "9";
+  display: block;
+  margin-top: 0px;
+  margin-left: -50px; }
+
+/* line 68, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#symbol-exclamation:after {
+  content: "!";
+  display: block;
+  margin-top: 0px;
+  margin-left: 30px; }
+
+/* line 69, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#symbol-at:after {
+  content: "@";
+  display: block;
+  margin-top: 25px;
+  margin-left: -30px; }
+
+/* line 70, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#symbol-hash:after {
+  content: "#";
+  display: block;
+  margin-top: 0px;
+  margin-left: 30px; }
+
+/* line 71, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#symbol-dollar:after {
+  content: "$";
+  display: block;
+  margin-top: 75px;
+  margin-left: 10px; }
+
+/* line 72, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#symbol-percent:after {
+  content: "%";
+  display: block;
+  margin-top: 60px;
+  margin-left: -10px; }
+
+/* line 73, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#symbol-carat:after {
+  content: "^";
+  display: block;
+  margin-top: 0px;
+  margin-left: 60px; }
+
+/* line 74, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#symbol-ampersand:after {
+  content: "&";
+  display: block;
+  margin-top: 50px;
+  margin-left: -5px; }
+
+/* line 75, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#symbol-asterisk:after {
+  content: "*";
+  display: block;
+  margin-top: 25px;
+  margin-left: 90px; }
+
+/* line 76, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#symbol-leftparen:after {
+  content: "(";
+  display: block;
+  margin-top: 10px;
+  margin-left: 25px; }
+
+/* line 77, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#symbol-rightparen:after {
+  content: ")";
+  display: block;
+  margin-top: -110px;
+  margin-left: 80px; }
+
+/* line 78, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#symbol-leftbrace:after {
+  content: "{";
+  display: block;
+  margin-top: 20px;
+  margin-left: 115px; }
+
+/* line 79, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#symbol-rightbrace:after {
+  content: "}";
+  display: block;
+  margin-top: -60px;
+  margin-left: 10px; }
+
+/* line 80, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#symbol-leftbracket:after {
+  content: "[";
+  display: block;
+  margin-top: 80px;
+  margin-left: 10px; }
+
+/* line 81, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#symbol-rightbracket:after {
+  content: "]";
+  display: block;
+  margin-top: 150px;
+  margin-left: 70px; }
+
+/* line 82, /Users/Celine/Dropbox/Web/type/source/stylesheets/characters.css.scss */
+#symbol-question:after {
+  content: "?";
+  display: block;
+  margin-top: 15px;
+  margin-left: 40px; }

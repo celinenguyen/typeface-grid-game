@@ -1,0 +1,55 @@
+---
+title: Helvetica Neue
+---
+
+<header>
+  <h1>Helvetica Neue</h1>
+  <ul id="options" class="unselectable">
+    <li id="refresh">&#10227;</li>
+    <div class="divider">&nbsp;</div>
+    <li id="normal">Aa</li>
+    <li id="italic">Aa</li>
+    <li id="bold" class="exclusive-on">Aa</li>
+    <li id="bolditalic">Aa</li>
+  </ul>
+</header>
+
+
+<div id="grid" class="unselectable">
+	<!-- stationary factoid squares -->
+	<% data.factoids.each do |item| %>
+		<div class="factoid" id="<%= item.id %>">
+			<h3><%= item.name %></h3>
+      <ul>
+        <% item.fact.each do |f| %>
+        <li><%= f %></li>
+        <% end %>
+      </ul>
+		</div>
+ 	<% end %>
+	<!-- movable character squares -->
+	<div class="character bold" id="one">
+		<div id="lowercase-a"></div>
+	</div>
+  <div class="character bold" id="two">
+  	<div id="number-2"></div>
+  </div>
+  <div class="character bold" id="three">
+  	<div id="symbol-ampersand"></div>
+  </div>
+  <div class="character bold" id="four">
+  	<div id="lowercase-h"></div>
+  </div>
+  <div class="character bold" id="five">
+  	<div id="uppercase-n"></div>
+  </div>
+  <div class="character bold" id="six">
+  	<div id="symbol-leftbrace"></div>
+  </div>
+  <div class="character bold" id="seven">
+  	<div id="uppercase-r"></div>
+  </div>
+  <div class="character bold" id="eight">
+  	<div id="lowercase-y"></div>
+  </div>
+</div><!-- #grid -->
